@@ -7,20 +7,22 @@ import { AppComponent } from './app.component';
 
 // PrimeNg
 import { SharedModule } from './shared/shared.module';
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
+
+//Configuración del local de la App
+import localeEsPE from '@angular/common/locales/es-PE';
+import { registerLocaleData } from '@angular/common'
 
 
-
+registerLocaleData(localeEsPE);
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule,
-    PrimeNgModule,
-    BrowserAnimationsModule
+    SharedModule,    
    
   ],
   providers: [],

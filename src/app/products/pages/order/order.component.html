@@ -1,7 +1,33 @@
 <p-panel header="Pipes Personalizados" class="p-1">
-  <p>Pipes Personalizados - Creado por {{ "Hugo Luis - R" | toggleCase }}</p>
+  <p>
+    Pipes Personalizados - Creado por {{ "Hugo Luis - R" | toggleCase : true }}
+  </p>
 </p-panel>
 
-<div class="grid">
-  <div class="col-12 md:col-4"></div>
-</div>
+<p-toolbar>
+  <div class="p-toolbar-group-end">
+    <p-button label="ToogleCase" icon="pi pi-search"></p-button>
+  </div>
+  <div class="p-toolbar-group-end">
+    <p-button
+      class="mr-2"
+      label="Por Nombre"
+      icon="pi pi-sort"
+      styleClass="p-button-success"
+    ></p-button>
+
+    <p-button
+      class="mr-2"
+      label="Por Volar"
+      icon="pi pi-sort"
+      styleClass="p-button-danger"
+    ></p-button>
+
+    <p-button
+      class="mr-2"
+      label="Por Color"
+      icon="pi pi-sort"
+      styleClass="p-button-help"
+    ></p-button>
+  </div>
+</p-toolbar>

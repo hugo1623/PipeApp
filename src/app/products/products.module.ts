@@ -10,6 +10,7 @@ import { OrderComponent } from './pages/order/order.component';
 // pipes
 import { TogglecasePipe } from './pipes/toggle-case.pipe';
 
+
 @NgModule({
   declarations: [
     BasicsPageComponent,

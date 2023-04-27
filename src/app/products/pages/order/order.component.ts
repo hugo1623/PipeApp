@@ -13,9 +13,9 @@ export class OrderComponent {
     { name: 'Superman', canFly: true, color: Color.blue },
     { name: 'Batman', canFly: false, color: Color.black },
     { name: 'Flash', canFly: false, color: Color.red },
+    { name: 'Linterna Verde', canFly: true, color: Color.green },
     { name: 'Daredevil', canFly: false, color: Color.red },
     { name: 'Robin', canFly: false, color: Color.green },
-    { name: 'Linterna Verde', canFly: true, color: Color.green },
   ];
 
   toggleUpperCase(): void {
